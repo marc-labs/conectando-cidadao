@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f5f8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #eaf3fa;
+    color: #16466e;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+nav {
+    background-color: #16466e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #2876a8;
+    border-radius: 5px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #16466e;
+    border-bottom: 2px solid #d5e6f3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #2876a8;
+    margin-top: 20px;
+}
+
+section .botao {
+    display: block;
+    width: fit-content;
+    margin: 12px 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #245b8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.botao:hover {
+    background-color: #2876a8;
+}
+
+footer {
+    background-color: #16466e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7em;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    }
+
+    nav a {
+        padding: 12px 10px;
+        font-size: 0.9em;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 20px;
+    }
+
+    section .botao {
+        width: auto;
+        display: block;
+        text-align: center;
+        padding: 12px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
